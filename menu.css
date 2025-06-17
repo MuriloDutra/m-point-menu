@@ -1,0 +1,36 @@
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+}
+  
+main {
+    height: 100%;
+}
+
+p {
+    margin: 0;
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px;
+    gap: 20px;
+}
+
+.items li {
+    display: block;
+}
