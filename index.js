@@ -6,13 +6,13 @@ if (menuContainer) {
     menuContainer.innerHTML = `
         ${menu.map(({items, label}) => {
             return `
-                <div>
+                <div class="items-container">
                     ${label?.length > 0 ? `<h2>${label}</h2>` : ''}
                     <ul class="items">
                         ${items.map(({name, price, description}) => `
                             <li>
-                                <p>${name} R$${price}</p>
-                                ${description?.length > 0 ? `<p>${description}</p>` : ''}
+                                <p class="item-name">${name} | R$${price}</p>
+                                ${description?.length > 0 ? `<p class="item-description">${description}</p>` : ''}
                             </li>
                         `).join('')}
                     </ul>

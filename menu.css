@@ -11,6 +11,16 @@ li {
   
 main {
     height: 100%;
+    border: 1px solid #01287e;
+    padding: 20px 50px;
+    margin-top: 00px;
+}
+
+h2 {
+   border-bottom: 3px solid #01287e;
+   padding-bottom: 10px;
+   font-size: 35px;
+   color: #01287e;
 }
 
 p {
@@ -18,9 +28,15 @@ p {
 }
 
 #menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-self: center;
+    column-count: 2;
+    gap: 30px;
+}
+
+.items-container {
+    margin: 5px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 .items {
@@ -28,9 +44,17 @@ p {
     flex-direction: column;
     width: 100%;
     padding: 0px;
-    gap: 20px;
+    gap: 30px;
 }
 
 .items li {
     display: block;
+}
+
+.item-name {
+    font-size: 23px;
+}
+
+.item-description {
+    font-size: 18px;
 }
