@@ -33,3 +33,9 @@ h1, h2, h3, h4, h5, h6, p, span {
     color: #01287e;
     font-family: "Kantumruy Pro", sans-serif;
 }
+
+@media (max-width: 1024px) {
+    body {
+        margin: 0px 15px;
+    }
+}

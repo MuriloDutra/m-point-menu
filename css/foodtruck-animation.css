@@ -9,5 +9,34 @@
 
 header .foodtruck {
     animation: foodtruck-animation 1s linear forwards;
-    transform: rotate(0deg);
+}
+
+@media (max-width: 1024px) {
+    @keyframes foodtruck-animation-tablet {
+        0% {
+            right: 0;
+        }
+        100% {
+            right: 30%; 
+        }
+    }
+
+    header .foodtruck {
+        animation: foodtruck-animation-tablet 0.5s linear forwards;
+    }
+}
+
+@media (max-width: 768px) {
+    @keyframes foodtruck-animation-mobile {
+        0% {
+            right: 0;
+        }
+        100% {
+            right: 15%; 
+        }
+    }
+
+    header .foodtruck {
+        animation: foodtruck-animation-mobile 0.5s linear forwards;
+    }
 }
